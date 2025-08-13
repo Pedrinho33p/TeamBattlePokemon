@@ -1,0 +1,46 @@
+**Projeto:** Gerador de Time Pokémon + Simulador de Batalha
+
+### 🎯 Objetivo
+
+Criar um site interativo e divertido onde o usuário possa:
+
+1. Gerar um **time Pokémon aleatório**.
+2. Simular uma batalha simples entre Pokémons.
+
+---
+
+### 🖥 Funcionalidades obrigatórias
+
+#### **1. Gerador de Time Pokémon**
+
+* Botão “Gerar Time” que exibe **6 Pokémons aleatórios**.
+* Mostrar **imagem, nome e tipo** de cada Pokémon.
+* Os Pokémons devem vir da **PokéAPI** para garantir variedade.
+* O layout do time deve ser responsivo (funcionar no celular e no PC).
+
+#### **2. Simulador de Batalha**
+
+* Usuário escolhe **6 Pokémons** para lutar (pode ser de uma lista ou gerados aleatoriamente).
+* Mostrar informações dos dois Pokémons escolhidos.
+* Determinar o vencedor com base **na vantagem de tipo** (ex.: Água ganha de Fogo).
+* Mostrar um texto divertido de vitória/derrota.
+* Utilizar os golpes dos pokemons **Cada pokemon tem 4 golpes**.
+
+---
+
+### 🎨 Design
+
+* Estilo inspirado no universo Pokémon (cores vivas, fonte divertida, fundo temático).
+* Botões e imagens com **efeito hover**.
+* Layout limpo e fácil de entender.
+
+---
+
+### ⚙️ Extras (opcional, mas desejado)
+
+* Animação quando o time é gerado.
+* Efeito sonoro quando a batalha começa ou termina.
+* Possibilidade de compartilhar o time gerado nas redes sociais.
+
+---
+

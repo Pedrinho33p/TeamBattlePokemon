@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBP Login</title>
+    <link rel="stylesheet" href="../Login/login.css">
+</head>
+<body>
+
+    <div id="loader">
+        <img src="../imgs/Pokemon.gif" alt="Carregando..." />
+    </div>
+    <script>
+    window.addEventListener('load', function(){
+        document.getElementById('loader').style.display = 'none';
+    });
+
+     document.querySelectorAll('button[data-href]').forEach(button => {
+        button.addEventListener('click', function(){
+        const href = this.getAttribute('data-href');
+        document.getElementById('loader').style.display = 'flex';
+        setTimeout(() => {
+            window.location.href = href;
+        }, 300); 
+        });
+    });
+</script>
+</body>
+</html>

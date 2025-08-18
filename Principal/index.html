@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamBattle Pokemon</title>
+    <link rel="stylesheet" href="../Principal/styles.css">
+</head>
+<body>
+<body>
+    <h1 class="titulo">Team Battle Pokemon</h1>
+    <hr>
+    <div class="button">
+        <button>Criar Time</button>
+        <button>Batalhar</button>
+        <button>Lista de golpes</button>
+    </div>
+    <div class="menu-bottom">
+        <a href="../Login/login.html">
+            <button>Entrar</button>
+        </a>
+            <button>Registrar</button>
+    </div>
+    <div id="loader">
+        <img src="../imgs/Pokemon.gif" alt="Carregando..." />
+    </div>
+    <script>
+    window.addEventListener('load', function(){
+        document.getElementById('loader').style.display = 'none';
+    });
+
+     document.querySelectorAll('button[data-href]').forEach(button => {
+        button.addEventListener('click', function(){
+        const href = this.getAttribute('data-href');
+        document.getElementById('loader').style.display = 'flex';
+        setTimeout(() => {
+            window.location.href = href;
+        }, 300); 
+        });
+    });
+</script>
+</body>
+</html>
